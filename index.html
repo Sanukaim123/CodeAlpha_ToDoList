@@ -26,9 +26,17 @@
             }
         })   
 
-        let addItem = (task) => {
+        let addItem = (inputBx) => {
             let listItem = document.createElement("li");
-            listItem.textContent = task;
+            listItem.innerHTML = `${inputBx}<i></i>`;
+
+            listItem.addEventListener("click", function(){
+                this.classList.toggle("done");
+            })
+
+            listItem.querySelector("i").addEventListener("click",function(){
+                listItem.remove();
+            })
                 list.appendChild(listItem);
         }
         
