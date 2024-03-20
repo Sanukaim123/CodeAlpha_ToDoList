@@ -11,7 +11,7 @@ body{
     width:450px;
     height:550px;
     border-radius: 30px;
-    background:#2f363e ;
+    background:#3f154e ;
     padding:30px 50px;
     box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
     10px 10px 70px rgba(0,0,0,0.25)
@@ -20,6 +20,8 @@ body{
 
     /* inset -5px -5px 15px rgba(0,0,0,0.75) */
     ;
+    align-items: center;
+    justify-items: center;
 }
 
 h2{
@@ -33,10 +35,11 @@ h2{
 
 #inputBx{
     position: relative;
-    width:100%;
+   width:90%;
     border: none;
     outline:none;
     padding: 15px 20px ;
+    margin-left: 0px;
     border-radius: 30px;
     font-size: 1em;
     box-shadow:5px 5px 7px rgba(0,0,0,0.25),
@@ -47,12 +50,12 @@ h2{
 .box li{
     position: relative;
     display:flex;
-    width:calc(100%-40px); 
-    justify-content: space-between; 
+    width:90%; 
+    /* justify-content: space-between;  */
     /* min-height:45px; */
     align-items:center;
     background : #1f83f2;
-    margin:15px 0;
+    margin:15px 0 ;
     padding : 10px 10px 10px 45px ;
     cursor : pointer;
     border-radius : 22.5px; 
@@ -67,6 +70,7 @@ h2{
     height:30px;
     display: flex;
     justify-content: center;
+    align-items: center;
     
     background: #ff2c74;
     border-radius: 50%;
@@ -102,6 +106,7 @@ h2{
     height: 30px;
     background: #2f363e;
     border-radius: 50%;
+
 } 
 
 .box li.done{
