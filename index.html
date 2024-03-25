@@ -6,9 +6,10 @@
     <title>To do List</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="body">
     <div class="container">
         <div class="box">
+
             <h2>To do List</h2>
 
             <div class="row">
@@ -27,10 +28,20 @@
         let list = document.querySelector("#list");
 
         inputBx.addEventListener ("keyup",function(event){
-            if (event.key=="Enter"){
+            if(inputBx.value===""){
+        alert('You must write something');}
+        else if
+            
+            
+            
+            
+            
+            
+                (event.key=="Enter"){
                 addItem(this.value)
                 this.value= ""
             }
+            
         })   
 
         let addItem = (inputBx) => {
